@@ -4,7 +4,6 @@
 }
 body {
   background-color: #fff;
-
 }
 
 nav {
@@ -12,6 +11,7 @@ nav {
   height: 100px;
   background-color: #fff;
 }
+
 .logo a{
   display: block;
   text-decoration: none;
@@ -23,23 +23,35 @@ nav {
   text-align: left;
   width: 0;
   height: auto;
-  position: fixed;
+  position: absolute;
   top: 18px;
   left: 20px;
-  z-index: 1;
+  right: 20px;
+  z-index: 1000;
 }
 
-.ul li {
-  text-align: center;
+ul {
+ margin-left: 550px;
+}
+
+ul li {
   list-style: none;
   display: inline-block;
+  float: left;
+  line-height: 100px;
 }
-.ul a{
-  color: black;
+
+ul li a {
+  display: block;
   text-decoration: none;
-  font: 25px Helvetica;
-  margin: 0px 10px;
-  padding: 20px;
+  font-size: 25px;
+  font-family: Helvetica;
+  color: #1e1e1e;
+  padding: 0 20px;
+}
+
+ul li a:hover {
+  color: red;
 }
 
 .wrapper{
